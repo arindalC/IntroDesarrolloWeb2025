@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Investigación Múltiple</title>
+    </head>
+
+    <body>
+        <h1>Investigación Múltiple</h1>
+        <div>
+            <h2>Diferencias, implicaciones visuales e implicaciones en motores de búsqueda entre etiquetas</h2>
+            <h3>&lt;b&gt;&lt;/b&gt; vs &lt;strong&gt;&lt;/strong&gt;</h3>
+            Ambas etiquetas se utilizan para aplicar formato de negrita al texto y no existe una diferencia en cómo se ven en el documento. Sin embargo, la etiqueta &lt;b&gt; se utiliza principalmente con fines estilísticos, es decir, que sólo le dice al navegador que resalte en negritas el texto, mientras que la etiqueta &lt;strong&gt; indica texto con gran importancia dentro de la estrcutura del documento, pues se encarga de transmitir significado más allá de solo ser estético. Cuando se realiza una búsqueda en google, esta diferencia es la que hace que buscadores como google le den más peso al contenido dentro del &lt;strong&gt;.
+            <h3>&lt;i&gt;&lt;/i&gt; vs &lt;em&gt;&lt;/em&gt;</h3>
+            Pasa lo mismo con estas dos etiquetas, ya que ambas muentran el texto en itálicas y no hay una diferencia visual en el documento. Pero &lt;i&gt; es sólamente visual, mientras que &lt;em&gt; tiene un valor interpretativo de relevancia, por lo que google lo puede interpretar como un texto con mayor importancia dentro de la página.
+            <h3>&lt;s&gt;&lt;/s&gt; vs &lt;del&gt;&lt;/del&gt;</h3>
+            No es excepción con estas últimas dos etiqueticas, ambas muestran el texto tachado con una línea horizontal en el centro de la palabra y visualmente se ven iguales. La diferencia está en la conotación de cada una, ya que &lt;s&gt; es una etiqueta que especifica texto que ya no es correcto, relevante o preciso, mientras que &lt;del&gt; indica texto que ha sido eliminado del documento real. Por lo que nuevamente, &lt;s&gt; termina siendo visual y ante los buscadores será solamente un formato, mientras para los buscadores la etiqueta &lt;del&gt; significa que ese fragmento ya no forma parte del contenido principal.
+        </div>
+        <div>
+            <h2>Categorías a elementos o etiquetas</h2>
+            <h3>Elementos de línea</h3>
+             Un elemento de línea en HTML solo ocupa el ancho de su contenido y permite que otros elementos se encuentren en la misma línea. Se utilizan para dar formato a fragmentos pequeños dentro del texto. Unos ejemplos de estos elementos son:
+             <ul>
+                <li>&lt;a&gt;</li> 
+                <li>&lt;img&gt;</li>
+                <li>&lt;strong&gt;</li>
+                <li>&lt;i&gt;</li>
+                <li>&lt;em&gt;</li>
+            </ul>
+            Ejemplo visual:
+            <br>
+            <img src="ELineaHTML.png" alt="Elemento de linea en HTML"  width = "350">
+            <img src="ELVisual.png" alt="Elemento de linea en página"  width = "300">
+            <br>
+            Como podemos notar, a pesar de que se escriba en dos líneas diferentes, al ser un elemento de línea ambas imágenes se encuentran en la misma línea, ya que sólo usan el espacio que necesitan para el contenido.
+
+            <h3>Elementos de bloque</h3>
+            Un elemento de bloque en HTML es el que ocupa todo el ancho  de la página o del elemento que lo contiene y siempre empiezan en una nueva línea. Se usan para estructurar la página y organizar las secciones. Algunos ejemplos de este tipo de elementos son:
+            <ul>
+                <li>&lt;p&gt;</li> 
+                <li>&lt;h1&gt; hasta &lt;h6&gt; </li>
+                <li>&lt;div&gt;</li>
+                <li>&lt;footer&gt;</li>
+                <li>&lt;header&gt;</li>
+            </ul>
+            Aunque solo pongas una palabra dentro de estos elementos, estos ocuparán todo el ancho disponible y como su nombre los dice "Elementos bloque", se comportan como una caja en donde se estrctura el contenido.
+            Ejemplo visual:
+            <br>
+            <img src="EBloqueHTML.png" alt="Elemento de bloque en HTML"  width = "200">
+            <img src="EBVisual.png" alt="Elemento de bloque en página"  width = "100">
+            <br>
+            Como podemos observar, aquí si se escriben en líneas diferentes a pesar de que aún haya espacio, ya que lo que hacen es tomar todo el espacio disponible sin importar que no se unse completamente.
+        </div>
+
+        <div>
+            <h2>Campos en los formularios</h2>
+            <h3>&lt;input&gt;</h3>
+            Este elemento se utiliza para crear controles en formularios web que aceptan datos del usuario. Algunas de sus propiedades son:
+            <ul>
+                <li><b>required:</b> se usa para que sea obligatorio compleyar el campo antes de enviar</li>
+                <li><b>name:</b> es el nombr que se le pone al campo</li>
+                <li><b>placeholder:</b> es el texto que se le pone de guía al campo</li>
+                <li><b>accept:</b> sólo permite los tipos de archivos especificados en el apartado</li>
+                <li><b>type:</b> indica el tipo de dato en el formulario</li>
+            </ul>
+            Todavía hay muchos más. En cuanto al type hay muchos usos distintos, por ejmeplo:
+            <ul>
+                <li><b>text:</b>es una caja de texto normal</li>
+                <li><b>email:</b> es una caja que valida que el correo ingresado sea váido</li>
+                <li><b>number:</b> es una caja de texto que solo acepta números</li>
+                <li><b>password:</b> oculta el texto que el usuario escribe para mantener la seguridad</li>
+                <li><b>date:</b> muentra un selector de calendario</li>
+                <li><b>file:</b> permite seleccionar archivos desde la compu</li>
+                <li><b>range:</b> muestra una barra deslizable para elegir un valor</li>
+
+            </ul> 
+
+            <h3>&lt;label&gt;</h3>
+            Es un elemento en una interfaz de usuario. Sirve para asociar una etiqueta con un campo de netrada en un formulario, lo que ayuda a los usuarios a comprender la información solicitada en el mismo campo.
+            Algunas de sus propiedades son:
+            <ul>
+                <li><b>for:</b> es el id del elemento de formulario al que está asociado</li>
+                <li><b>form:</b> lo asocia a un formulario específico mediante su id</li>
+            </ul>
+            <h3>&lt;output&gt;</h3>
+            Se usa en formularios para mostrar el resultado de un cálculo, como resultado de una acción en un formulario.
+            Sus spropiedades son:
+            <ul>
+                <li><b>for:</b> indica qué campos están relacionados con el resultado</li>
+                <li><b>form:</b> lo asocia a un formulario específico mediante su id</li>
+                <li><b>name:</b> es el nombre del elemento</li>
+            </ul>
+            <h3>&lt;progress&gt;</h3>
+            Se utiliza para visualizar el progreso de una tarea.
+            Propiedades:
+            <ul>
+                <li><b>max:</b> indica la cantidad de trabajo que demora la carga</li>
+                <li><b>value:</b> indica qué parte de la tarea ya se ha completado</li>
+            </ul>
+            <h3>&lt;select&gt;</h3>
+            Crea una lista desplegable de opciones para que el usuario elija.
+            Propiedades:
+            <ul>
+                <li><b>diseable:</b> especifica si el usuario puede interactuar con el control</li>
+                <li><b>multiple:</b> indica si se pueden seleccionar múltiples ocpiones</li>
+                <li><b>form</b></li>
+                <li><b>name</b></li>
+                <li><b>required</b></li>
+            </ul>
+            <h3>&lt;option&gt;</h3>
+            Define cada ocpión dentro de un select y representa un valor que el usuario puede usar.
+            Propiedades:
+            <ul>
+                <li><b>value:</b> el valor que se enviará si se elige esa opción</li>
+                <li><b>selected:</b> opción preseleccionada por defecto</li>
+                <li><b>disable:</b> muestra la opción pero no se puede seleccionar</li>
+            </ul>
+            <h3>&lt;textarea&gt;</h3>
+            Permite al usuario escribir texto en varias líneas, como para mensajes largos, descripciones, etc. Propiedades:
+            <ul>
+                <li><b>rows:</b> número de filas visibles</li>
+                <li><b>cols:</b> número de columnas visibles</li>
+                <li><b>disable</b></li>
+                <li><b>name</b></li>
+                <li><b>placeholder</b></li>
+                <li><b>required</b></li>
+            </ul>  
+        </div>
+        <div>
+            <h1>Formulario de ejemplo</h1>
+            <form oninput = "resultado.value = (parseInt(num1.value)||0) + (parseInt(num2.value)||0) ; barra.value = avance.value; pct.value = avance.value + '%'">
+               <fieldset>
+                <p>Datos personales</p>
+                <label for:"nombre">Nombre</label>
+               <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
+                <label for:"correo">Correo</label>
+               <input id="correo" name="correo" type="email" placeholder="ejemplo@correo.com" required>
+               </fieldset>
+               <fieldset>
+                <p>Tu edad como suma:</p>
+                <label for:"num1">Numero A:</label>
+                <input id="num1" type="number" value="0">
+                <label for:"num2">Numero b:</label>
+                <input id="num2" type="number" value="1">
+                <output id="resultado" name="resultado" for="num1 num2"></output>
+               </fieldset>
+               <fieldset>
+                <p>Opciones:</p>
+                <label for:"carrera">Selecciona tu carrera:</label>
+                <select id="carrera" name="carrera" required>
+                    <option value = "" disabled selected>- Eligen una carrera -</option>
+                    <option value="act">Actuaría</option>
+                    <option value="cd">Ciencia de Datos</option>
+                    <option value="adm">Administración</option>
+                    <option value="eco">Economía</option>
+                    <option value="coc">Cocina</option>
+                </select>
+               </fieldset>
+               <fieldset>
+                <p>Progreso de la carrera</p>
+                <label for="avance">Avance:</label>
+                <input type="range" id = "avance" min= "0" max="100" value="50" ninput="barra.value = this.value">
+                <progress id="barra" value="50" max="100"></progress>    
+                <output id="pct">50%</output>
+            </fieldset>
+               <fieldset>
+                <label for="comentarios">Escribe tu comentario:</label>
+                <textarea id="comentarios" name="comentarios" rows="5" placeholder="Escribe aquí..." required></textarea>
+                </fieldset>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </form>
+
+        </div>
+
+
+    </body>
+
+</html>

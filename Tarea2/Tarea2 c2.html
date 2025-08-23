@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset ="UTF-8" />
+        <title>Formulario de Búesqueda de libros en biblioteca iTAM</title>
+    </head>
+    <body>
+        <h1>Formulario GET para buscar libros en https://biblioteca.itam.mx/</h1>
+        <form action = "https://hercules.itam.mx/F/-/" target = "_blank">
+            <label for"searchInput">Buscar en itam.mx:</label>
+            <input 
+                type = "text"
+                id = "searchInput"
+                name = request
+                placeholder ="Término de búsqueda"
+                required
+            />
+            <input 
+                type = "text"
+                id = "searchInput"
+                name = ssl_flag
+                placeholder ="Término de búsqueda"
+                required
+            /> 
+            <input 
+                type = "text"
+                id = "searchInput"
+                name = find_code
+                placeholder ="Término de búsqueda"
+                required
+            /> 
+            <input 
+                type = "text"
+                id = "searchInput"
+                name = func
+                placeholder ="Término de búsqueda"
+                required
+            /> 
+
+            <input 
+                type = "text"
+                id = "searchInput"
+                name = local_base
+                placeholder ="Término de búsqueda"
+                required
+            /> 
+
+
+            <button type="submit">Buscar</button>
+
+        </form>
+
+        <h1>Formulario GET para buscar libros en cervantesvirtual.com/</h1>
+        <form action = "https://www.cervantesvirtual.com/buscador/" target = "_blank">
+            <label for"searchInput">Buscar en cervantesvirtual.com:</label>
+            <input 
+                type = "text"
+                id = "searchInput"
+                name = q
+                placeholder ="Término de búsqueda"
+                required
+            />
+            <button type="submit">Buscar</button>
+        </form>
+
+
+    </body>
+</html>
